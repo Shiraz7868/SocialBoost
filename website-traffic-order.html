@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO: Website Traffic Specific Title -->
+    <title>Order 100% Unique Website Traffic | SocialBoost</title>
+    <!-- SEO: Website Traffic Specific Meta Description -->
+    <meta name="description" content="Buy 100% Unique Website Traffic. Choose Lifetime or Non-Lifetime source options. Min order 100 visitors. Calculate price & order via WhatsApp.">
+
+    <!-- === Embedded CSS Styles (Same UI) === -->
+    <style>
+        /* --- Basic Styles & Reset --- */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.7; background-color: #f8f9fa; color: #343a40; overflow-x: hidden; }
+        html { scroll-behavior: smooth; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+        a { text-decoration: none; color: #007bff; transition: color 0.3s ease; }
+        a:hover { color: #0056b3; }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        /* --- Header --- */
+        header { background: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-bottom: 1px solid #e0e0e0; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.8rem; font-weight: bold; color: #007bff; }
+        #main-menu { display: flex; align-items: center; }
+        #main-menu li { margin-left: 25px; }
+        #main-menu a { color: #555; font-weight: 500; padding: 5px 10px; transition: color 0.3s ease, background-color 0.3s ease; border-radius: 5px; }
+        #main-menu a:hover, #main-menu a.active { color: #007bff; background-color: rgba(0, 123, 255, 0.1); }
+        #menu-toggle { display: none; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: #343a40;}
+
+        /* --- Website Traffic Order Section Styles --- */
+        #website-traffic-order { padding: 4rem 0; background-color: #ffffff; } /* Updated ID */
+        #website-traffic-order .container { max-width: 700px; }
+        #website-traffic-order h1 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #343a40; }
+        #website-traffic-order .section-subtitle { text-align: center; font-size: 1.1rem; color: #6c757d; margin-bottom: 3rem; }
+        .order-step { background-color: #fff; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.07); border: 1px solid #e9ecef; }
+        .order-step h2 { font-size: 1.3rem; margin-bottom: 1rem; color: #007bff; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
+
+        /* Radio Buttons */
+        .radio-group label { display: block; background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 5px; padding: 10px 15px; margin-bottom: 10px; cursor: pointer; transition: all 0.3s ease; position: relative; padding-left: 35px; }
+        .radio-group input[type="radio"] { opacity: 0; position: absolute; left: -9999px; }
+        .radio-group label::before { content: ''; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; border: 2px solid #adb5bd; border-radius: 50%; background-color: #fff; }
+        .radio-group input[type="radio"]:checked + label::before { border-color: #007bff; background-color: #007bff; }
+        .radio-group input[type="radio"]:checked + label::after { content: ''; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 8px; height: 8px; border-radius: 50%; background-color: #fff; }
+        .radio-group input[type="radio"]:checked + label { background-color: #e7f1ff; border-color: #007bff; font-weight: 500; }
+        .radio-group label span.price { font-weight: bold; color: #28a745; float: right; }
+        .radio-group label span.price-desc { font-size: 0.8em; color: #6c757d; display: block; margin-top: 3px; text-align: right; }
+
+        /* Input Fields */
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .form-group input[type="number"], .form-group input[type="text"], .form-group input[type="url"] { width: 100%; padding: 12px 15px; border: 1px solid #ced4da; border-radius: 5px; font-size: 1rem; appearance: textfield; }
+        input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+        input[type=number] { -moz-appearance: textfield; }
+
+        /* Price Display */
+        #total-price-container { margin-top: 1.5rem; padding: 1rem; background-color: #e9ecef; border-radius: 5px; text-align: center; font-size: 1.2rem; }
+        #total-price-container span { font-weight: bold; font-size: 1.5rem; color: #dc3545; }
+
+        /* Payment Note */
+        .payment-note { font-size: 0.9em; color: #5a5a5a; text-align: center; margin-top: 1rem; margin-bottom: 0.5rem; }
+
+        /* Order Button */
+        #order-button { display: block; width: 100%; padding: 15px; background-color: #28a745; color: white; font-size: 1.2rem; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease, opacity 0.3s ease; margin-top: 0.5rem; }
+        #order-button:disabled { background-color: #6c757d; cursor: not-allowed; opacity: 0.7; }
+        #order-button:hover:not(:disabled) { background-color: #218838; }
+        .hidden { display: none; }
+        #error-message { color: #dc3545; font-weight: bold; text-align: center; margin-top: 1rem; padding: 0.5rem; border: 1px solid #dc3545; background-color: #f8d7da; border-radius: 5px; }
+
+        /* --- Footer --- */
+        footer { background: #343a40; color: #f8f9fa; text-align: center; padding: 2rem 0; margin-top: 4rem; }
+        footer p { font-size: 0.9rem; }
+
+        /* --- Responsive Design --- */
+         @media (max-width: 768px) {
+            .logo { font-size: 1.5rem; }
+            #menu-toggle { display: block; }
+            #main-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; background-color: #fff; width: 100%; padding: 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 1px solid #e0e0e0; }
+            #main-menu.active { display: flex; }
+            #main-menu li { margin-left: 0; margin-bottom: 1rem; text-align: center; width: 100%; }
+            #main-menu a { display: block; padding: 10px; }
+            #main-menu a:hover, #main-menu a.active { background-color: rgba(0, 123, 255, 0.1); }
+             #website-traffic-order h1 { font-size: 2rem; } /* Updated ID */
+             .radio-group label span.price { display: block; float: none; margin-top: 5px; font-size: 0.9em; text-align: left; }
+             .radio-group label span.price-desc { text-align: left; }
+        }
+         @media (max-width: 480px) {
+             #website-traffic-order h1 { font-size: 1.8rem; } /* Updated ID */
+         }
+
+    </style>
+</head>
+<body>
+
+    <!-- === Header === -->
+    <header>
+        <div class="container">
+            <div class="logo">SocialBoost</div>
+            <nav>
+                <button id="menu-toggle">☰</button>
+                <ul id="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tiktok-order.html">TikTok Order</a></li>
+                    <li><a href="instagram-order.html">Instagram Order</a></li>
+                    <li><a href="youtube-order.html">YouTube Order</a></li>
+                    <li><a href="facebook-order.html">Facebook Order</a></li>
+                    <li><a href="telegram-order.html">Telegram Order</a></li>
+                    <!-- Add Twitter & WhatsApp links when pages are ready -->
+                    <li><a href="website-traffic-order.html" class="active">Website Traffic</a></li> <!-- Active Link -->
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- === Main Content === -->
+    <main>
+        <section id="website-traffic-order"> <!-- Updated ID -->
+            <div class="container">
+                <h1>100% Unique Website Traffic Order</h1> <!-- Updated Heading -->
+                <p class="section-subtitle">Complete the steps below to order high-quality website traffic.</p>
+
+                <!-- Step 1: Service Type (Only one service here, so this step can be conceptual or hidden) -->
+                <!-- For simplicity, we'll assume the service is pre-selected by landing on this page. -->
+                <!-- You could have a hidden input or directly use 'website_traffic' in JS -->
+
+                <!-- Step 1 (renamed from Step 2): Select Source/Guarantee Option -->
+                <div class="order-step" id="guarantee-options"> <!-- No longer hidden by default -->
+                    <h2>Step 1: Choose Traffic Source Option</h2>
+                    <div class="radio-group" id="guarantee-group">
+                        <input type="radio" id="lifetime" name="guarantee_option" value="lifetime">
+                        <label for="lifetime">Premium Source (Lifetime Analytics)
+                            <span class="price" id="lifetime-price"></span>
+                            <span class="price-desc">(Price per 1000 Visitors)</span>
+                        </label>
+
+                        <input type="radio" id="non-lifetime" name="guarantee_option" value="non-lifetime">
+                        <label for="non-lifetime">Standard Source (Non-Lifetime Analytics)
+                             <span class="price" id="non-lifetime-price"></span>
+                             <span class="price-desc">(Price per 1000 Visitors)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Step 2 (renamed from Step 3): Enter Quantity & Website Link -->
+                <div class="order-step hidden" id="quantity-section"> <!-- Initially hidden until option is selected -->
+                    <h2>Step 2: Enter Quantity & Website Link</h2>
+                    <div class="form-group">
+                         <label for="quantity">Number of Unique Visitors (Minimum 100):</label>
+                         <input type="number" id="quantity" name="quantity" min="100" placeholder="e.g., 100, 1000, 5000">
+                    </div>
+                     <div class="form-group">
+                         <label for="profile-link" id="link-label">Your Website URL:</label>
+                         <input type="url" id="profile-link" name="profile_link" placeholder="e.g., https://www.yourwebsite.com" required>
+                     </div>
+                </div>
+
+                <!-- Step 3 (renamed from Step 4): Price & Order Button -->
+                 <div class="order-step hidden" id="price-order-section"> <!-- Initially hidden -->
+                    <h2>Step 3: Review & Order</h2>
+                    <div id="total-price-container">
+                        Total Price: <span id="total-price">Rs 0</span>
+                    </div>
+                    <p class="payment-note">
+                        <strong>Note:</strong> Advance payment is required to start your order.
+                    </p>
+                    <div id="error-message" class="hidden"></div>
+                    <button id="order-button" disabled>Order Now via WhatsApp</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- === Footer === -->
+    <footer>
+        <div class="container">
+             <p>© 2023 SocialBoost. All Rights Reserved. | Website Traffic Services</p> <!-- Updated Footer -->
+        </div>
+    </footer>
+
+    <!-- === Embedded JavaScript === -->
+    <script>
+        // --- Configuration ---
+        const WHATSAPP_NUMBER = '923017815162'; // آپ کا نمبر
+        const MIN_QUANTITY_DEFAULT = 100;
+
+        // Price data object for Website Traffic - UPDATED
+        // Since there's only one "service type" (website traffic), we simplify.
+        // The "lifetime" and "nonLifetime" keys now represent the two options for this single service.
+        const serviceDetails = {
+            name: "100% Unique Website Traffic",
+            options: {
+                lifetime:    { price: 250, name: "Premium Source (Lifetime Analytics)" },
+                nonLifetime: { price: 100, name: "Standard Source (Non-Lifetime Analytics)" }
+            },
+            linkType: "Website URL",
+            min: 100,
+            unit: "/1000 Visitors" // Price description for the options
+        };
+
+        // --- DOM Elements ---
+        // No serviceTypeGroup needed as it's a single service page
+        const guaranteeOptionsDiv = document.getElementById('guarantee-options');
+        const guaranteeGroup = document.getElementById('guarantee-group');
+        const lifetimePriceSpan = document.getElementById('lifetime-price');
+        const nonLifetimePriceSpan = document.getElementById('non-lifetime-price');
+        // To set the price description dynamically for the options
+        const lifetimePriceDescLabel = document.querySelector('label[for="lifetime"] .price-desc');
+        const nonLifetimePriceDescLabel = document.querySelector('label[for="non-lifetime"] .price-desc');
+
+        const quantitySectionDiv = document.getElementById('quantity-section');
+        const quantityInput = document.getElementById('quantity');
+        const linkLabel = document.getElementById('link-label');
+        const profileLinkInput = document.getElementById('profile-link');
+        const priceOrderSectionDiv = document.getElementById('price-order-section');
+        const totalPriceSpan = document.getElementById('total-price');
+        const orderButton = document.getElementById('order-button');
+        const errorMessageDiv = document.getElementById('error-message');
+
+        // --- State Variables ---
+        let selectedOptionKey = null; // 'lifetime' or 'nonLifetime'
+        let currentQuantity = 0;
+        let calculatedPrice = 0;
+        let profileLink = '';
+        let currentMinQuantity = serviceDetails.min;
+
+        // --- Functions ---
+        function formatPrice(price) { return `Rs ${price.toLocaleString()}`; }
+        function displayError(message) { errorMessageDiv.textContent = message; errorMessageDiv.classList.remove('hidden'); }
+        function hideError() { errorMessageDiv.classList.add('hidden'); }
+
+        function initializePage() {
+            // Set initial prices for the options
+            lifetimePriceSpan.textContent = formatPrice(serviceDetails.options.lifetime.price);
+            nonLifetimePriceSpan.textContent = formatPrice(serviceDetails.options.nonLifetime.price);
+            // Set price description for options
+            if (lifetimePriceDescLabel) lifetimePriceDescLabel.textContent = `(Price ${serviceDetails.unit})`;
+            if (nonLifetimePriceDescLabel) nonLifetimePriceDescLabel.textContent = `(Price ${serviceDetails.unit})`;
+
+
+            // Set link label and placeholder
+            linkLabel.textContent = `Your ${serviceDetails.linkType}:`;
+            profileLinkInput.placeholder = "e.g., https://www.yourwebsite.com";
+            profileLinkInput.type = "url";
+
+            // Set min quantity for the input
+            quantityInput.min = currentMinQuantity;
+        }
+
+
+        function updatePrice() {
+            hideError();
+            if (selectedOptionKey && currentQuantity >= currentMinQuantity) {
+                const selectedPricePer1000 = serviceDetails.options[selectedOptionKey].price;
+                calculatedPrice = Math.round((currentQuantity / 1000) * selectedPricePer1000);
+
+                totalPriceSpan.textContent = `Rs ${calculatedPrice.toLocaleString()}`;
+                priceOrderSectionDiv.classList.remove('hidden');
+                validateAndEnableOrderButton();
+            } else {
+                totalPriceSpan.textContent = `Rs 0`;
+                calculatedPrice = 0;
+                 if(selectedOptionKey) { priceOrderSectionDiv.classList.remove('hidden'); } // Keep visible if option selected
+                 else { priceOrderSectionDiv.classList.add('hidden'); }
+                orderButton.disabled = true;
+                 if (selectedOptionKey && currentQuantity > 0 && currentQuantity < currentMinQuantity) {
+                    displayError(`Minimum quantity is ${currentMinQuantity} visitors.`);
+                 }
+            }
+        }
+
+        function validateAndEnableOrderButton() {
+             profileLink = profileLinkInput.value.trim();
+             const isLinkValid = profileLink !== '' && (profileLink.startsWith('http://') || profileLink.startsWith('https://'));
+
+             if (selectedOptionKey && currentQuantity >= currentMinQuantity && calculatedPrice >= 0 && isLinkValid) {
+                 orderButton.disabled = false;
+                 if (!(currentQuantity > 0 && currentQuantity < currentMinQuantity)) {
+                     hideError();
+                 }
+             } else {
+                 orderButton.disabled = true;
+                  if (selectedOptionKey && currentQuantity >= currentMinQuantity && !isLinkValid && profileLink !== '') {
+                     displayError('Please enter a valid website URL (starting with http:// or https://).');
+                  }
+             }
+        }
+
+        // --- Event Listeners ---
+        guaranteeGroup.addEventListener('change', (event) => { // This is now the first step
+             if (event.target.name === 'guarantee_option') {
+                selectedOptionKey = event.target.value; // 'lifetime' or 'nonLifetime'
+                quantitySectionDiv.classList.remove('hidden'); // Show quantity and link section
+                updatePrice(); // Update price based on newly selected option and existing quantity
+             }
+        });
+
+        quantityInput.addEventListener('input', () => {
+            currentQuantity = parseInt(quantityInput.value) || 0;
+            updatePrice();
+            validateAndEnableOrderButton();
+        });
+
+        profileLinkInput.addEventListener('input', () => {
+             validateAndEnableOrderButton();
+        });
+
+        orderButton.addEventListener('click', () => {
+             profileLink = profileLinkInput.value.trim();
+             if (!selectedOptionKey || currentQuantity < currentMinQuantity || calculatedPrice < 0 || profileLink === '' || !(profileLink.startsWith('http://') || profileLink.startsWith('https://'))) {
+                 displayError(`Please complete all steps, ensure quantity is at least ${currentMinQuantity}, and provide a valid website URL.`);
+                 return;
+            }
+             if (!WHATSAPP_NUMBER) {
+                 displayError('WhatsApp number is not configured.');
+                 return;
+             }
+
+            const selectedOptionName = serviceDetails.options[selectedOptionKey].name;
+
+            let message = `*--- Website Traffic Order ---*\n\n`;
+            message += `*Service:* ${serviceDetails.name}\n`;
+            message += `*Traffic Source Option:* ${selectedOptionName}\n`;
+            message += `*Number of Visitors:* ${currentQuantity.toLocaleString()}\n`;
+            message += `*${serviceDetails.linkType}:* ${profileLink}\n`;
+            message += `*Total Price:* Rs ${calculatedPrice.toLocaleString()}\n\n`;
+            message += `Please confirm this order and proceed with the advance payment.`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            window.open(whatsappURL, '_blank');
+        });
+
+        // --- Initialize Page ---
+        initializePage();
+
+
+        // --- Mobile Menu ---
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainMenu = document.getElementById('main-menu');
+        if(menuToggle && mainMenu) {
+            menuToggle.addEventListener('click', () => {
+                mainMenu.classList.toggle('active');
+                menuToggle.innerHTML = mainMenu.classList.contains('active') ? '×' : '☰';
+            });
+        }
+         document.querySelectorAll('#main-menu a').forEach(link => {
+             link.addEventListener('click', (e) => {
+                 if (window.innerWidth <= 768 && mainMenu && mainMenu.classList.contains('active')) {
+                      mainMenu.classList.remove('active');
+                      if(menuToggle) menuToggle.innerHTML = '☰';
+                 }
+                 const targetHref = link.getAttribute('href');
+                 if (targetHref && !targetHref.startsWith('#')) {
+                     document.querySelectorAll('#main-menu a').forEach(l => l.classList.remove('active'));
+                     link.classList.add('active');
+                 } else if (targetHref && targetHref.startsWith('index.html#')) {
+                    // Allow navigation
+                 }
+             });
+         });
+
+    </script>
+
+</body>
+</html>
