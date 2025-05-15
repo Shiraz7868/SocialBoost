@@ -3,256 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Growth Services | Boost All Your Platforms</title>
-    <meta name="description" content="Get real Likes, Followers, Views, Traffic & more for TikTok, Instagram, YouTube, Facebook, Telegram, Twitter, and your Website. Choose your platform!">
+    <title>SocialBoost | Login or Register</title>
+    <meta name="description" content="Login or Register to access social media growth services.">
 
-    <!-- === Embedded CSS Styles === -->
     <style>
-        /* --- Basic Styles & Reset --- */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; background-color: #f8f9fa; color: #343a40; overflow-x: hidden; }
-        html { scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; background-color: #f0f2f5; color: #343a40; display: flex; flex-direction: column; min-height: 100vh; }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         a { text-decoration: none; color: #007bff; transition: color 0.3s ease; }
         a:hover { color: #0056b3; }
         ul { list-style: none; }
         img { max-width: 100%; display: block; }
 
-        /* --- Header --- */
-        header { background: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-bottom: 1px solid #e0e0e0; }
-        header .container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8rem; font-weight: bold; color: #007bff; }
-        #main-menu { display: flex; align-items: center; }
-        #main-menu li { margin-left: 25px; }
-        #main-menu a { color: #555; font-weight: 500; padding: 5px 10px; transition: color 0.3s ease, background-color 0.3s ease; border-radius: 5px; }
-        #main-menu a:hover, #main-menu a.active { color: #007bff; background-color: rgba(0, 123, 255, 0.1); }
-        #menu-toggle { display: none; background: none; border: none; font-size: 1.8rem; cursor: pointer; color: #343a40;}
-
-        /* --- Hero Section --- */
-        #hero { background: linear-gradient(135deg, #007bff 0%, #3f51b5 100%); color: #fff; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 4rem 1rem; }
-        #hero h1 { font-size: 3.2rem; margin-bottom: 1rem; font-weight: 700; text-shadow: 1px 1px 3px rgba(0,0,0,0.2); }
-        #hero p { font-size: 1.3rem; margin-bottom: 2.5rem; max-width: 750px; }
-        .cta-button { background-color: #fff; color: #007bff; padding: 14px 35px; font-size: 1.15rem; font-weight: bold; border: none; border-radius: 50px; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
-        .cta-button:hover { background-color: #f0f0f0; transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); }
-
-        /* --- Platform Selection Section --- */
-        #platforms { padding: 5rem 0; background-color: #fff; text-align: center; }
-        #platforms h2 { font-size: 2.8rem; margin-bottom: 1.5rem; color: #343a40; }
-        #platforms .section-subtitle { font-size: 1.2rem; color: #6c757d; margin-bottom: 4rem; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
-        .platform-card { background-color: #fff; padding: 2rem 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: 1px solid #e9ecef; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; justify-content: space-between; }
-        .platform-card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); }
-        .platform-card .icon { height: 80px; margin-bottom: 1.5rem; display: flex; justify-content: center; align-items: center; }
-        .platform-card .icon img { max-height: 100%; max-width: 120px; width: auto; }
-        .platform-card h3 { font-size: 1.6rem; margin-bottom: 0.8rem; color: #343a40; }
-        .platform-card p { font-size: 0.95rem; margin-bottom: 1.5rem; color: #495057; flex-grow: 1; }
-        .platform-button { display: inline-block; background-color: #28a745; color: #fff !important; padding: 10px 20px; border-radius: 25px; font-weight: 500; transition: background-color 0.3s ease; border: none; cursor: pointer; margin-top: auto; }
-        .platform-button:hover { background-color: #218838; color: #fff !important; }
-
-        /* --- Placeholder Sections --- */
-        #about, #contact { padding: 4rem 0; background-color: #f1f3f5; text-align: center; }
-        #about h2, #contact h2 { font-size: 2.5rem; margin-bottom: 1.5rem; }
-        #about p, #contact p { font-size: 1.1rem; color: #6c757d; max-width: 600px; margin: 0 auto; }
-
-        /* --- Footer --- */
-        footer { background: #343a40; color: #f8f9fa; text-align: center; padding: 2rem 0; margin-top: 0; }
-        footer p { font-size: 0.9rem; }
-
-        /* --- Floating WhatsApp Button --- ADDED CSS */
-        #whatsapp-float {
-            position: fixed; /* Keep it fixed on screen */
-            bottom: 25px;    /* Distance from bottom */
-            right: 25px;     /* Distance from right */
-            z-index: 1050;   /* Ensure it's above most content */
-            transition: transform 0.3s ease; /* Smooth hover effect */
+        /* === Preloader Styles - ADDED === */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff; /* White background for preloader */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999; /* Highest z-index */
+            opacity: 1;
+            transition: opacity 0.5s ease-out;
         }
-        #whatsapp-float img {
-            width: 60px;     /* Icon size */
+        #preloader.hidden {
+            opacity: 0;
+            pointer-events: none; /* Allow clicks through when hidden */
+        }
+        .loader {
+            border: 6px solid #f3f3f3; /* Light grey */
+            border-top: 6px solid #007bff; /* Blue */
+            border-radius: 50%;
+            width: 60px;
             height: 60px;
-            border-radius: 50%; /* Make it circular */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+            animation: spin 1s linear infinite;
         }
-        #whatsapp-float:hover {
-            transform: scale(1.1); /* Slightly enlarge on hover */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
+        /* End Preloader Styles */
 
 
-        /* --- Responsive Design --- */
-        @media (max-width: 992px) { .platform-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); } }
+        .auth-container { display: flex; justify-content: center; align-items: center; flex-grow: 1; padding: 2rem 1rem; }
+        .auth-form-wrapper { background-color: #fff; padding: 2.5rem 2rem; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 100%; max-width: 400px; text-align: center; }
+        .auth-form-wrapper h1 { font-size: 1.8rem; margin-bottom: 0.5rem; color: #333; }
+        .auth-form-wrapper .form-subtitle { font-size: 0.9rem; color: #666; margin-bottom: 1.5rem; }
+        .form-group { margin-bottom: 1rem; text-align: left; }
+        .form-group label { display: block; font-weight: 500; margin-bottom: 0.25rem; font-size: 0.85rem; }
+        .form-group input { width: 100%; padding: 0.65rem; border: 1px solid #ddd; border-radius: 5px; font-size: 0.9rem; }
+        .auth-button { width: 100%; padding: 0.7rem; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 0.95rem; font-weight: 500; cursor: pointer; transition: background-color 0.3s ease, opacity 0.3s ease; margin-top: 0.5rem;}
+        .auth-button:hover:not(:disabled) { background-color: #0056b3; }
+        .auth-button:disabled { background-color: #6c757d; opacity: 0.7; cursor: not-allowed; }
+        .toggle-form-link { display: block; margin-top: 1rem; font-size: 0.85rem; color: #007bff; cursor: pointer; }
+        .toggle-form-link:hover { text-decoration: underline; }
+        .auth-message { margin-top: 0.8rem; padding: 0.6rem; border-radius: 5px; font-size: 0.85rem; }
+        .auth-message.error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;}
+        .auth-message.success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;}
+
+        .main-content-area { display: none; flex-direction: column; flex-grow: 1; }
+        header { background: #fff; padding: 0.8rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.6rem; font-weight: bold; color: #007bff; }
+        
+        #menu-toggle-btn { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #343a40; padding: 5px; order: 1; /* For flex alignment if needed */ }
+        #main-nav { display: flex; align-items: center; /* order: 0; For flex alignment if needed */ }
+        #main-nav ul { display: flex; align-items: center; }
+        #main-nav li { margin-left: 15px; }
+        #main-nav a, .profile-button-nav, .logout-button-nav { color: #555; font-weight: 500; padding: 5px 8px; transition: color 0.3s ease, background-color 0.3s ease; border-radius: 5px; cursor: pointer; background: none; border: none; font-family: 'Poppins', sans-serif; font-size: 0.9rem; }
+        #main-nav a:hover, #main-nav a.active-link, .profile-button-nav:hover, .logout-button-nav:hover { color: #007bff; background-color: rgba(0, 123, 255, 0.05); }
+        
+
+        .profile-dropdown-container { position: relative; }
+        #user-profile-dropdown { display: none; position: absolute; top: calc(100% + 5px); right: 0; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 230px; z-index: 1001; padding: 0.8rem; }
+        #user-profile-dropdown.active { display: block; }
+        #user-profile-dropdown p { margin-bottom: 0.4rem; font-size: 0.85rem; color: #333; word-break: break-all; }
+        #user-profile-dropdown p strong { color: #000; }
+        #user-profile-dropdown hr { border: 0; border-top: 1px solid #eee; margin: 0.6rem 0; }
+        #user-profile-dropdown .logout-button-dropdown { width: 100%; text-align: left; padding: 6px 8px; color: #dc3545; background: none; border: none; font-family: 'Poppins', sans-serif; font-size: 0.85rem; cursor: pointer; border-radius: 3px;}
+        #user-profile-dropdown .logout-button-dropdown:hover { background-color: rgba(220, 53, 69, 0.1); }
+
+        #hero { background: linear-gradient(135deg, #007bff 0%, #3f51b5 100%); color: #fff; min-height: 50vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 3rem 1rem; }
+        #hero h1 { font-size: 2.5rem; margin-bottom: 0.8rem; }
+        #hero p { font-size: 1.1rem; margin-bottom: 1.5rem; max-width: 650px; }
+        .cta-button { background-color: #fff; color: #007bff; padding: 10px 25px; font-size: 1rem; font-weight: bold; border-radius: 50px; border:none; cursor:pointer; transition: all 0.2s ease;}
+        .cta-button:hover { background-color: #f0f0f0; transform: translateY(-2px); box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+
+        #platforms { padding: 3.5rem 0; background-color: #fff; text-align: center; }
+        #platforms h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+        #platforms .section-subtitle { font-size: 1rem; color: #6c757d; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+        .platform-card { background-color: #fff; padding: 1.2rem; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.07); border: 1px solid #e9ecef; text-align: center; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s ease, box-shadow 0.2s ease;}
+        .platform-card:hover { transform: translateY(-4px); box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+        .platform-card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; }
+        .platform-card p { font-size: 0.85rem; margin-bottom: 1rem; color: #555; flex-grow: 1; }
+        .platform-button { display: inline-block; background-color: #28a745; color: #fff !important; padding: 7px 15px; border-radius: 20px; font-weight: 500; font-size: 0.85rem; margin-top: auto; border:none; cursor:pointer; transition: background-color 0.2s ease;}
+        .platform-button:hover { background-color: #218838; }
+        .platform-button.demo { background-color: #ffc107; color: #212529 !important; }
+        .platform-button.demo:hover { background-color: #e0a800; }
+
+        #about, #contact { padding: 2.5rem 0; background-color: #f1f3f5; text-align: center; }
+        #about h2, #contact h2 { font-size: 2rem; margin-bottom: 1rem; }
+        #about p, #contact p { font-size: 0.95rem; color: #6c757d; max-width: 500px; margin: 0 auto; }
+
+        .main-content-area footer { background: #343a40; color: #f8f9fa; text-align: center; padding: 1.2rem 0; margin-top: auto; }
+        .main-content-area footer p { font-size: 0.8rem; }
+
+        #whatsapp-float { position: fixed; bottom: 20px; right: 20px; z-index: 1050; }
+        #whatsapp-float img { width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 3px 7px rgba(0,0,0,0.2); transition: transform 0.2s ease;}
+        #whatsapp-float:hover img { transform: scale(1.1); }
+
+        .hidden { display: none !important; }
+
         @media (max-width: 768px) {
-            .logo { font-size: 1.5rem; }
-            #menu-toggle { display: block; }
-            #main-menu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; background-color: #fff; width: 100%; padding: 1rem 0; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 1px solid #e0e0e0; }
-            #main-menu.active { display: flex; }
-            #main-menu li { margin-left: 0; margin-bottom: 1rem; text-align: center; width: 100%; }
-            #main-menu a { display: block; padding: 10px; }
-            #main-menu a:hover, #main-menu a.active { background-color: rgba(0, 123, 255, 0.1); }
-            #hero h1 { font-size: 2.5rem; }
-            #hero p { font-size: 1.1rem; }
-            #platforms h2 { font-size: 2.2rem; }
-            .platform-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-             /* Adjust WhatsApp icon size for smaller screens */
-             #whatsapp-float img {
-                 width: 50px;
-                 height: 50px;
-             }
-             #whatsapp-float {
-                 bottom: 20px;
-                 right: 20px;
-             }
+            header .container {
+                /* On mobile, menu toggle button might push nav to new line if not enough space */
+                /* We can use flex properties to control order and alignment better if needed */
+            }
+            .logo { font-size: 1.4rem; }
+            #menu-toggle-btn { display: block; /* Show hamburger */ margin-left: auto; /* Push to the right if nav is also displayed initially on larger small screens */ order: 1; /* Ensure it's after logo if needed */ }
+            #main-nav {
+                order: 0; /* Ensure nav comes before toggle button in source for some flex setups, or adjust as needed */
+            }
+            #main-nav ul {
+                display: none; /* Hidden by default */
+                flex-direction: column;
+                position: absolute;
+                top: 100%; /* Below header */
+                left: 0;
+                background-color: #fff;
+                width: 100%;
+                padding: 1rem 0;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                border-top: 1px solid #e0e0e0;
+            }
+            #main-nav ul.active { display: flex; /* Show when toggled */ }
+            #main-nav li { margin-left: 0; margin-bottom: 0.5rem; width: 100%; text-align: center; }
+            #main-nav a, .profile-button-nav, .logout-button-nav { display: block; padding: 10px; width: 100%; }
+            
+            .profile-dropdown-container { width: 100%; }
+            #user-profile-dropdown {
+                position: static; 
+                width: auto; /* Take width of parent li in mobile menu */
+                box-shadow: none;
+                border: none;
+                border-top: 1px solid #eee;
+                margin-top: 0.5rem;
+                padding-top: 0.5rem;
+                background-color: #f9f9f9; /* Slightly different bg for dropdown in mobile menu */
+            }
+            #user-profile-dropdown.active { display: block; }
+
+            #hero h1 { font-size: 2rem; } #hero p { font-size: 1rem; }
+            #platforms h2 { font-size: 1.8rem; }
+            .platform-grid { grid-template-columns: 1fr; }
         }
-         @media (max-width: 576px) {
-             #hero h1 { font-size: 2rem; }
-             #hero p { font-size: 1rem; }
-             #platforms h2 { font-size: 1.8rem; }
-              .platform-grid { grid-template-columns: 1fr; }
-              .platform-card { padding: 1.5rem; }
-              .platform-card .icon { height: 60px; }
-         }
     </style>
 </head>
 <body>
+    <!-- Preloader HTML - ADDED -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
-    <!-- === Header === -->
-    <header>
-        <div class="container">
-            <div class="logo">SocialBoost</div>
-            <nav>
-                <button id="menu-toggle">☰</button>
-                <ul id="main-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="#platforms">Platforms</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <div class="auth-container" id="authArea">
+        <!-- Auth forms content... (same as previous) -->
+        <div class="auth-form-wrapper">
+            <form id="loginForm">
+                <h1>Welcome Back!</h1><p class="form-subtitle">Login to access SocialBoost.</p>
+                <div class="form-group"><label for="loginIdentifier">Email or Username</label><input type="text" id="loginIdentifier" required></div>
+                <div class="form-group"><label for="loginPassword">Password</label><input type="password" id="loginPassword" required></div>
+                <button type="submit" class="auth-button">Login</button>
+                <p class="auth-message error hidden" id="loginMessage"></p>
+                <a class="toggle-form-link" id="showRegisterLink">Don't have an account? Register</a>
+            </form>
+            <form id="registerForm" class="hidden">
+                <h1>Create Account</h1><p class="form-subtitle">Join SocialBoost today.</p>
+                <div class="form-group"><label for="registerName">Full Name</label><input type="text" id="registerName" required></div>
+                <div class="form-group"><label for="registerUsername">Username</label><input type="text" id="registerUsername" required></div>
+                <div class="form-group"><label for="registerEmail">Email</label><input type="email" id="registerEmail" required></div>
+                <div class="form-group"><label for="registerPassword">Password</label><input type="password" id="registerPassword" required></div>
+                <button type="submit" class="auth-button">Register</button>
+                <p class="auth-message error hidden" id="registerMessage"></p>
+                <p class="auth-message success hidden" id="registerSuccessMessage"></p>
+                <a class="toggle-form-link" id="showLoginLink">Already have an account? Login</a>
+            </form>
         </div>
-    </header>
+    </div>
 
-    <!-- === Main Content === -->
-    <main>
-        <!-- === Hero Section === -->
-        <section id="hero">
-            <h1>Boost Your Social Media Presence</h1>
-            <p>Select a platform below to get high-quality Likes, Followers, Views, and more!</p>
-            <a href="#platforms" class="cta-button">Choose Your Platform</a>
-        </section>
-
-        <!-- === Platform Selection Section === -->
-        <section id="platforms">
+    <div class="main-content-area" id="mainContent">
+        <header>
             <div class="container">
-                <h2>Select Your Platform</h2>
-                <p class="section-subtitle">We offer growth services for many popular social networks and websites.</p>
-
-                <div class="platform-grid">
-                    <!-- Cards for TikTok, Instagram, YouTube, Facebook, Telegram, Twitter, WhatsApp, Website Traffic -->
-                    <!-- (Code for cards remains the same as previous version with logos) -->
-
-                     <!-- 1. TikTok Card -->
-                    <div class="platform-card">
-                        <div class="icon"> <img src="tiktok1.png" alt="TikTok Logo"> </div>
-                        <h3>TikTok Services</h3> <p>Get TikTok Likes, Followers, Views, and Comments.</p>
-                        <a href="tiktok-order.html" class="platform-button">View TikTok Offers</a>
-                    </div>
-                    <!-- 2. Instagram Card -->
-                    <div class="platform-card">
-                         <div class="icon"> <img src="instagram1.png" alt="Instagram Logo"> </div>
-                        <h3>Instagram Services</h3> <p>Boost your Instagram with Likes, Followers, and Views.</p>
-                        <a href="instagram-order.html" class="platform-button">View Instagram Offers</a>
-                    </div>
-                    <!-- 3. YouTube Card -->
-                    <div class="platform-card">
-                        <div class="icon"> <img src="youtube1.png" alt="YouTube Logo"> </div>
-                        <h3>YouTube Services</h3> <p>Grow your channel with Views, Subscribers, and Likes.</p>
-                        <a href="youtube-order.html" class="platform-button">View YouTube Offers</a>
-                    </div>
-                    <!-- 4. Facebook Card -->
-                    <div class="platform-card">
-                         <div class="icon"> <img src="facebook1.png" alt="Facebook Logo"> </div>
-                        <h3>Facebook Services</h3> <p>Increase Page Likes, Post Likes, Followers, and Views.</p>
-                        <a href="facebook-order.html" class="platform-button">View Facebook Offers</a>
-                    </div>
-                    <!-- 5. Telegram Card -->
-                    <div class="platform-card">
-                        <div class="icon"> <img src="telegram1.png" alt="Telegram Logo"> </div>
-                        <h3>Telegram Services</h3> <p>Get Channel Members, Post Views, and Reactions.</p>
-                        <a href="telegram-order.html" class="platform-button">View Telegram Offers</a>
-                    </div>
-                    <!-- 6. Twitter Card -->
-                    <div class="platform-card">
-                         <div class="icon"> <img src="twitter1.png" alt="Twitter (X) Logo"> </div>
-                        <h3>Twitter (X) Services</h3> <p>Boost your profile with Followers, Likes, and Retweets.</p>
-                        <a href="twitter-order.html" class="platform-button">View Twitter Offers</a>
-                    </div>
-                     <!-- 7. WhatsApp Card -->
-                     <div class="platform-card">
-                        <div class="icon"> <img src="whatsapp1.png" alt="WhatsApp Logo"> </div>
-                       <h3>WhatsApp Services</h3> <p>Services for WhatsApp Channels or other related features.</p>
-                       <a href="whatsapp-order.html" class="platform-button">View WhatsApp Offers</a>
-                   </div>
-                    <!-- 8. Website Traffic Card -->
-                    <div class="platform-card">
-                        <div class="icon"> <img src="website1.png" alt="Website Traffic Icon"> </div>
-                       <h3>Website Traffic</h3> <p>Drive targeted visitors to your website or blog.</p>
-                       <a href="website-traffic-order.html" class="platform-button">View Website Traffic</a>
-                   </div>
-
-                </div> <!-- End platform-grid -->
-            </div> <!-- End container -->
-        </section>
-
-        <!-- === Placeholder Sections === -->
-        <section id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>We provide safe and effective social media growth solutions.</p>
+                <div class="logo">SocialBoost</div>
+                <button id="menu-toggle-btn">☰</button>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="#hero" class="active-link">Home</a></li>
+                        <li><a href="#platforms">Platforms</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="profile-dropdown-container">
+                            <button class="profile-button-nav" id="profile-toggle-button">
+                                <span id="nav-username-display">Profile</span>
+                            </button>
+                            <div id="user-profile-dropdown">
+                                <p><strong>Username:</strong> <span id="profile-username-display"></span></p>
+                                <p><strong>Email:</strong> <span id="profile-email-display"></span></p>
+                                <hr>
+                                <button class="logout-button-dropdown" id="logoutButton">Logout</button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <p>Have questions? Contact us for support or custom orders.</p>
-            </div>
-        </section>
-    </main>
+        </header>
+        <main>
+            <!-- Main content sections (hero, platforms, etc. - same as previous) -->
+            <section id="hero"><div class="container"><h1>Boost Your Social Media</h1><p>Select a platform or try our free demo!</p><a href="#platforms" class="cta-button">Choose Platform</a></div></section>
+            <section id="platforms"><div class="container"><h2>Select Your Platform</h2><p class="section-subtitle">We offer growth services for popular social networks.</p><div class="platform-grid">
+                <div class="platform-card"><h3>TikTok Free 1K Views Demo</h3><p>Try our service! Get 1000 TikTok views free.</p><a href="tiktok-free-views-order.html" class="platform-button demo">Get Demo</a></div>
+                <div class="platform-card"><h3>TikTok Services</h3><p>Likes, Followers, Views, Comments.</p><a href="tiktok-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>Instagram Services</h3><p>Likes, Followers, Views.</p><a href="instagram-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>YouTube Services</h3><p>Views, Subscribers, Likes.</p><a href="youtube-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>Facebook Services</h3><p>Page/Post Likes, Followers, Views.</p><a href="facebook-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>Telegram Services</h3><p>Members, Post Views, Reactions.</p><a href="telegram-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>Twitter (X) Services</h3><p>Followers, Likes, Retweets.</p><a href="twitter-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>WhatsApp Services</h3><p>Channel services & features.</p><a href="whatsapp-order.html" class="platform-button">View Offers</a></div>
+                <div class="platform-card"><h3>Website Traffic</h3><p>Drive visitors to your website.</p><a href="website-traffic-order.html" class="platform-button">View Offers</a></div>
+            </div></div></section>
+            <section id="about"><div class="container"><h2>About Us</h2><p>Effective social media growth solutions.</p></div></section>
+            <section id="contact"><div class="container"><h2>Contact</h2><p>Questions? Contact us for support.</p></div></section>
+        </main>
+        <footer><div class="container"><p>© 2024 SocialBoost. All Rights Reserved.</p></div></footer>
+    </div>
 
-    <!-- === Footer === -->
-    <footer>
-        <div class="container">
-            <p>© 2023 SocialBoost. All Rights Reserved. | Your Partner in Growth</p>
-        </div>
-    </footer>
-
-    <!-- === Floating WhatsApp Button --- ADDED HTML -->
-    <a href="https://wa.me/923017815162?text=Hello!%20I%20visited%20your%20website%20and%20have%20a%20question."
-       id="whatsapp-float"
-       target="_blank"
-       rel="noopener noreferrer">
-        <img src="Whatsappside.png" alt="Chat on WhatsApp">
+    <a href="https://wa.me/923017815162?text=Hello!%20I%20visited%20your%20website."
+       id="whatsapp-float" class="hidden">
+        <img src="Whatsappside.png" alt="WhatsApp">
     </a>
 
-    <!-- === Embedded JavaScript === -->
     <script>
-        // --- Mobile Menu Toggle ---
-        const menuToggle = document.getElementById('menu-toggle');
-        const mainMenu = document.getElementById('main-menu');
-        if(menuToggle && mainMenu) {
-            menuToggle.addEventListener('click', () => {
-                mainMenu.classList.toggle('active');
-                menuToggle.innerHTML = mainMenu.classList.contains('active') ? '×' : '☰';
-            });
+        // DOM Elements
+        const preloaderEl = document.getElementById('preloader'); // Preloader element
+        const authArea = document.getElementById('authArea');
+        const mainContentArea = document.getElementById('mainContent');
+        const loginFormEl = document.getElementById('loginForm');
+        const registerFormEl = document.getElementById('registerForm');
+        const loginMessageEl = document.getElementById('loginMessage');
+        const registerMessageEl = document.getElementById('registerMessage');
+        const registerSuccessMessageEl = document.getElementById('registerSuccessMessage');
+        const showRegisterLinkEl = document.getElementById('showRegisterLink');
+        const showLoginLinkEl = document.getElementById('showLoginLink');
+        const whatsappFloatBtn = document.getElementById('whatsapp-float');
+        const registerButton = registerFormEl.querySelector('.auth-button'); // Get register button
+
+        // Main content navigation
+        const menuToggleBtn = document.getElementById('menu-toggle-btn');
+        const mainNavUl = document.querySelector('#main-nav ul');
+        const profileToggleBtn = document.getElementById('profile-toggle-button');
+        const userProfileDropdownEl = document.getElementById('user-profile-dropdown');
+        const navUsernameDisplayEl = document.getElementById('nav-username-display');
+        const profileUsernameDisplayEl = document.getElementById('profile-username-display');
+        const profileEmailDisplayEl = document.getElementById('profile-email-display');
+        const logoutBtn = document.getElementById('logoutButton');
+
+        // --- Preloader Functions ---
+        function showPreloader() {
+            if(preloaderEl) preloaderEl.classList.remove('hidden');
         }
-        // Close menu if a link is clicked
-        document.querySelectorAll('#main-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768 && mainMenu && mainMenu.classList.contains('active')) {
-                     mainMenu.classList.remove('active');
-                     if(menuToggle) menuToggle.innerHTML = '☰';
+        function hidePreloader() {
+            if(preloaderEl) preloaderEl.classList.add('hidden');
+        }
+        function simulateLoading(duration, callback) {
+            showPreloader();
+            // Disable buttons during loading
+            const allAuthButtons = document.querySelectorAll('.auth-button');
+            allAuthButtons.forEach(btn => btn.disabled = true);
+
+            setTimeout(() => {
+                hidePreloader();
+                allAuthButtons.forEach(btn => btn.disabled = false);
+                if (callback) callback();
+            }, duration);
+        }
+
+
+        // Utility Functions
+        function showAuthMessage(el, message, isSuccess = false) { /* ... same ... */
+            el.textContent = message;
+            el.classList.remove('hidden', isSuccess ? 'error' : 'success');
+            el.classList.add(isSuccess ? 'success' : 'error');
+        }
+        function hideAuthMessages() { /* ... same ... */
+            [loginMessageEl, registerMessageEl, registerSuccessMessageEl].forEach(el => el.classList.add('hidden'));
+        }
+
+        // UI State Management
+        function showMainUI(userData) {
+            authArea.classList.add('hidden');
+            mainContentArea.style.display = 'flex';
+            document.body.style.backgroundColor = '#f8f9fa';
+            if (whatsappFloatBtn) whatsappFloatBtn.classList.remove('hidden');
+            if (userData) {
+                if(navUsernameDisplayEl) navUsernameDisplayEl.textContent = userData.username || 'Profile';
+                if(profileUsernameDisplayEl) profileUsernameDisplayEl.textContent = userData.username || 'N/A';
+                if(profileEmailDisplayEl) profileEmailDisplayEl.textContent = userData.email || 'N/A';
+            }
+        }
+        function showAuthUI() {
+            authArea.classList.remove('hidden');
+            mainContentArea.style.display = 'none';
+            document.body.style.backgroundColor = '#f0f2f5';
+            if (whatsappFloatBtn) whatsappFloatBtn.classList.add('hidden');
+            if (userProfileDropdownEl) userProfileDropdownEl.classList.remove('active');
+            if (mainNavUl) mainNavUl.classList.remove('active');
+        }
+
+        // Event Listeners for Auth Forms Toggle
+        showRegisterLinkEl.addEventListener('click', (e) => {
+            e.preventDefault();
+            simulateLoading(500, () => { // Shorter loading for toggle
+                loginFormEl.classList.add('hidden');
+                registerFormEl.classList.remove('hidden');
+                hideAuthMessages();
+            });
+        });
+        showLoginLinkEl.addEventListener('click', (e) => {
+            e.preventDefault();
+             simulateLoading(500, () => {
+                registerFormEl.classList.add('hidden');
+                loginFormEl.classList.remove('hidden');
+                hideAuthMessages();
+            });
+        });
+
+        // Registration
+        registerFormEl.addEventListener('submit', (e) => {
+            e.preventDefault();
+            hideAuthMessages();
+            // Show preloader for 5 seconds before processing registration
+            simulateLoading(3000, () => { // Simulate 3 second delay for registration processing
+                const name = document.getElementById('registerName').value.trim();
+                const username = document.getElementById('registerUsername').value.trim().toLowerCase();
+                const email = document.getElementById('registerEmail').value.trim().toLowerCase();
+                const password = document.getElementById('registerPassword').value;
+
+                if (!name || !username || !email || !password) {
+                    showAuthMessage(registerMessageEl, 'All fields are required.'); return;
+                }
+                if (!/^\S+@\S+\.\S+$/.test(email)) {
+                    showAuthMessage(registerMessageEl, 'Invalid email format.'); return;
+                }
+                if (username.length < 3 || username.includes(' ')) {
+                    showAuthMessage(registerMessageEl, 'Username: min 3 chars, no spaces.'); return;
+                }
+
+                let userExists = false;
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (key.startsWith('user_')) {
+                        try {
+                            const storedData = JSON.parse(localStorage.getItem(key));
+                            if (storedData.email === email) {
+                                 showAuthMessage(registerMessageEl, 'Email already registered.'); userExists = true; break;
+                            }
+                            if (storedData.username === username) {
+                                showAuthMessage(registerMessageEl, 'Username already taken.'); userExists = true; break;
+                            }
+                        } catch (err) {}
+                    }
+                }
+                if (userExists) return;
+
+                const userData = { name, username, email, password };
+                localStorage.setItem(`user_${email}`, JSON.stringify(userData));
+                showAuthMessage(registerSuccessMessageEl, 'Registration successful! Please login.', true);
+                registerFormEl.reset();
+            });
+        });
+
+        // Login
+        loginFormEl.addEventListener('submit', (e) => {
+            e.preventDefault();
+            hideAuthMessages();
+            simulateLoading(1500, () => { // Shorter loading for login attempt
+                const identifier = document.getElementById('loginIdentifier').value.trim().toLowerCase();
+                const password = document.getElementById('loginPassword').value;
+
+                if (!identifier || !password) {
+                    showAuthMessage(loginMessageEl, 'Identifier and password required.'); return;
+                }
+                let foundUser = null;
+                const directEmailUserJSON = localStorage.getItem(`user_${identifier}`);
+                if (directEmailUserJSON) {
+                     try {
+                        const userData = JSON.parse(directEmailUserJSON);
+                        if(userData.email === identifier) foundUser = userData;
+                     } catch(err) {}
+                }
+                if (!foundUser) {
+                    for (let i = 0; i < localStorage.length; i++) {
+                        const key = localStorage.key(i);
+                        if (key.startsWith('user_')) {
+                            try {
+                                const storedData = JSON.parse(localStorage.getItem(key));
+                                if (storedData.username === identifier) {
+                                    foundUser = storedData; break;
+                                }
+                            } catch (err) {}
+                        }
+                    }
+                }
+                if (foundUser && foundUser.password === password) {
+                    localStorage.setItem('loggedInUser', JSON.stringify(foundUser));
+                    showMainUI(foundUser);
+                } else {
+                    showAuthMessage(loginMessageEl, 'Invalid credentials or user not found.');
                 }
             });
         });
-    </script>
 
+        // Logout
+        function performLogout() {
+             simulateLoading(500, () => {
+                localStorage.removeItem('loggedInUser');
+                showAuthUI();
+            });
+        }
+        if (logoutBtn) logoutBtn.addEventListener('click', performLogout);
+
+        // Mobile Menu Toggle
+        if (menuToggleBtn && mainNavUl) {
+            menuToggleBtn.addEventListener('click', () => {
+                mainNavUl.classList.toggle('active');
+            });
+        }
+        if (mainNavUl) {
+            mainNavUl.querySelectorAll('a, button').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    if (e.currentTarget.id === 'profile-toggle-button' || e.currentTarget.closest('#profile-toggle-button')) {
+                        return; // Allow profile dropdown to handle its own toggle
+                    }
+                    if (window.innerWidth <= 768 && mainNavUl.classList.contains('active')) {
+                        mainNavUl.classList.remove('active');
+                    }
+                });
+            });
+        }
+
+        // Profile Dropdown Toggle
+        if (profileToggleBtn && userProfileDropdownEl) {
+            profileToggleBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                userProfileDropdownEl.classList.toggle('active');
+            });
+        }
+        document.addEventListener('click', (e) => {
+            if (userProfileDropdownEl && userProfileDropdownEl.classList.contains('active') &&
+                profileToggleBtn && !profileToggleBtn.contains(e.target) &&
+                !userProfileDropdownEl.contains(e.target)) {
+                userProfileDropdownEl.classList.remove('active');
+            }
+        });
+
+        // Initial Page Load Check
+        window.addEventListener('load', () => {
+            // Start with preloader visible
+            showPreloader();
+
+            setTimeout(() => { // Simulate initial asset loading
+                const loggedInUserDataString = localStorage.getItem('loggedInUser');
+                if (loggedInUserDataString) {
+                    try {
+                        const loggedInUserData = JSON.parse(loggedInUserDataString);
+                        showMainUI(loggedInUserData);
+                    } catch(e) {
+                        localStorage.removeItem('loggedInUser');
+                        showAuthUI();
+                    }
+                } else {
+                    showAuthUI();
+                }
+                hidePreloader(); // Hide preloader after initial check and UI setup
+            }, 1000); // Initial load delay
+
+
+            document.querySelectorAll('.main-content-area a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        const headerOffset = document.querySelector('.main-content-area header')?.offsetHeight || 0;
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset -10;
+                        
+                        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                        document.querySelectorAll('.main-content-area #main-nav a').forEach(link => link.classList.remove('active-link'));
+                        this.classList.add('active-link');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
